@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.bg__gradient {
+  background: linear-gradient(
+    180deg,
+    hsl(214, 47%, 23%) 0%,
+    hsl(237, 49%, 15%) 100%
+  );
+}
+
+.top-shadow-small {
+  box-shadow: inset 0 5px 0 1px rgba(199, 199, 199, 0.71);
+}
+.top-shadow-big {
+  box-shadow: inset 0 5px 0 1px rgba(199, 199, 199, 0.71);
+}
+
+.rock__gradient {
+  right: 0;
+  top: 55%;
+  transform: translateY(50%);
+}
+
+.paper__gradient {
+  right: 0;
+  transform: translateX(50%);
+  bottom: 8rem;
+}
+
+.scissors__gradient {
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lizard__gradient {
+  left: 0;
+  top: 55%;
+  transform: translateY(50%);
+}
+
+.spock__gradient {
+  left: 0;
+  bottom: 8rem;
+  transform: translateX(-50%);
+}
+
+.rock__shadow {
+  border-bottom: 5px solid;
+  border-color: hsl(349, 84%, 31%);
+}
+
+.paper__shadow {
+  border-bottom: 5px solid;
+  border-color: hsl(230, 68%, 44%);
+}
+
+.scissors__shadow {
+  border-bottom: 5px solid;
+  border-color: hsl(39, 96%, 39%);
+}
+
+.spock__shadow {
+  border-bottom: 5px solid;
+  border-color: hsl(189, 61%, 39%);
+}
+
+.lizard__shadow {
+  border-bottom: 5px solid;
+  border-color: hsl(261, 63%, 39%);
+}
+.shadow-player {
+  border-bottom: 5px solid;
+}
+.player-rock__shadow {
+  border-bottom: 6px solid;
+  border-color: hsl(349, 84%, 31%);
+}
+
+.player-paper__shadow {
+  border-bottom: 6px solid;
+  border-color: hsl(230, 68%, 44%);
+}
+
+.player-scissors__shadow {
+  border-bottom: 6px solid;
+  border-color: hsl(39, 96%, 39%);
+}
+
+.player-spock__shadow {
+  border-bottom: 6px solid;
+  border-color: hsl(189, 61%, 39%);
+}
+
+.player-lizard__shadow {
+  border-bottom: 6px solid;
+  border-color: hsl(261, 63%, 39%);
+}
+
+.rock__color {
+  background: linear-gradient(180deg, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.paper__color {
+  background: linear-gradient(
+    180deg,
+    hsl(230, 89%, 62%) 0%,
+    hsl(230, 89%, 65%) 100%
+  );
+}
+
+.scissors__color {
+  background: linear-gradient(
+    180deg,
+    hsl(39, 89%, 49%) 0%,
+    hsl(39, 89%, 49%) 100%
+  );
+}
+
+.spock__color {
+  background: linear-gradient(
+    180deg,
+    hsl(189, 59%, 53%) 0%,
+    hsl(189, 58%, 57%) 100%
+  );
+}
+
+.lizard__color {
+  background: linear-gradient(
+    180deg,
+    hsl(261, 73%, 60%) 0%,
+    hsl(261, 72%, 63%) 100%
+  );
+}
+
+.rock__size {
+  padding: 5rem;
+}
+
+.paper__size {
+  padding: 72px 5rem;
+}
+
+.scissors__size {
+  padding: 72px 5rem;
+}
+
+.spock__size {
+  padding: 66px 5rem;
+}
+
+.lizard__size {
+  padding: 5rem;
+}
+
+.winner {
+  align-items: center;
+  background: hsla(0, 0%, 100%, 0.06);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  top: 5%;
+  z-index: 1;
+}
+
+.winner_second {
+  align-items: center;
+  background: hsla(0, 0%, 100%, 0.04);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 570px;
+  height: 570px;
+  top: -16%;
+  z-index: 1;
+}
+
+.winner_third {
+  align-items: center;
+  background: hsla(0, 0%, 100%, 0.02);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  top: -31%;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1200px) {
+  .top-shadow-big {
+    box-shadow: inset 0 12px 0 1px rgba(199, 199, 199, 0.71);
+  }
+
+  .rock__shadow {
+    border-bottom: 12px solid;
+    border-color: hsl(349, 84%, 31%);
+  }
+
+  .paper__shadow {
+    border-bottom: 12px solid;
+    border-color: hsl(230, 68%, 44%);
+  }
+
+  .scissors__shadow {
+    border-bottom: 12px solid;
+    border-color: hsl(39, 96%, 39%);
+  }
+
+  .spock__shadow {
+    border-bottom: 12px solid;
+    border-color: hsl(189, 61%, 39%);
+  }
+
+  .lizard__shadow {
+    border-bottom: 12px solid;
+    border-color: hsl(261, 63%, 39%);
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .rock__size {
+    padding: 4rem;
+  }
+
+  .lizard__size {
+    padding: 4rem;
+  }
+
+  .paper__size {
+    padding: 60px 4.2rem;
+  }
+
+  .scissors__size {
+    padding: 60px 4rem;
+  }
+
+  .spock__size {
+    padding: 54px 4rem;
+  }
+
+  .winner {
+    width: 300px;
+    height: 300px;
+    top: 14%;
+  }
+
+  .winner_second {
+    width: 360px;
+    height: 360px;
+    top: -10%;
+  }
+
+  .winner_third {
+    width: 420px;
+    height: 420px;
+    top: -21%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rock__gradient {
+    top: 53%;
+  }
+  .lizard__gradient {
+    top: 53%;
+  }
+  .spock__gradient {
+    bottom: 6rem;
+  }
+  .paper__gradient {
+    bottom: 6rem;
+  }
+
+  .rock__size {
+    padding: 2rem;
+  }
+
+  .paper__size {
+    padding: 26px 2rem;
+  }
+
+  .scissors__size {
+    padding: 26px 2rem;
+  }
+
+  .spock__size {
+    padding: 22px 2rem;
+  }
+
+  .lizard__size {
+    padding: 2rem;
+  }
+
+  .winner {
+    width: 190px;
+    height: 190px;
+    top: 9%;
+  }
+
+  .winner_second {
+    width: 240px;
+    height: 240px;
+    top: -14%;
+  }
+
+  .winner_third {
+    width: 300px;
+    height: 300px;
+    top: -30%;
+  }
+}
