@@ -46,7 +46,7 @@ const MatchGame = ({ myPick, setIsMatchGame, setScore }) => {
           className="flex flex-col items-center gap-6 px-20 mt-20 w-[395px] lg:px-12 lg:w-[290px] md:absolute md:bottom-[-200px] md:right-[23%] ss:absolute ss:bottom-[-100px] ss:mt-0 ss:left-[22%] ss:w-[360px] xs:w-[40%] xs:absolute xs:p-0 xs:mt-0 xs:bottom-[-180px] xs:right-[30%] xs:-translate-x-1/2 z-10"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.3 }}
         >
           <h1 className="text-white text-6xl lg:text-5xl ss:text-5xl xs:text-4xl">
             {result}
